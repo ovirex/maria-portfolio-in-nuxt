@@ -80,8 +80,3 @@ export default {
   name: 'SidebarMenu',
 }
 </script>
-export default {
-    template: `
-
-    `,
-};

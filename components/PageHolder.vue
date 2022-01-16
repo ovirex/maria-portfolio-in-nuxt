@@ -13,13 +13,3 @@ export default {
   components: { PageNavbar },
 }
 </script>
-export default {
-    template: `
-
-    `,
-    components: {
-        navbar,
-        contentWrapper,
-        footerComponent,
-    },
-};
