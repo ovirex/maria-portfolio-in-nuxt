@@ -1,53 +1,49 @@
 <template>
   <div class="col-lg-4 mb-4 mb-lg-0">
-    <h2 class="h4 text-white mb-4">Follow me</h2>
+    <h2 class="h4 text-white mb-4">Let's chat!</h2>
     <ul class="list-inline">
       <div class="row text-white text-small">
         <div class="col-6">
           <ul class="list-unstyled">
             <li>
-              <a class="reset-anchor" href="#"
-                ><i class="fab fa-facebook-f mr-2 mb-2 fa-fw"></i>Facebook</a
+              <a
+                class="reset-anchor"
+                href="https://www.instagram.com/mariaescribe/"
+                target="blank"
               >
+                <i class="fab fa-instagram mr-2 mb-2 fa-fw"></i>Instagram
+              </a>
             </li>
             <li>
-              <a class="reset-anchor" href="#"
-                ><i class="fab fa-twitter mr-2 mb-2 fa-fw"></i>Twitter</a
+              <a
+                class="reset-anchor"
+                href="https://www.linkedin.com/in/mariaescribe/"
+                target="blank"
               >
-            </li>
-            <li>
-              <a class="reset-anchor" href="#"
-                ><i class="fab fa-instagram mr-2 mb-2 fa-fw"></i>Instagram</a
-              >
-            </li>
-            <li>
-              <a class="reset-anchor" href="#"
-                ><i class="fab fa-dribbble mr-2 mb-2 fa-fw"></i>Dribbble</a
-              >
+                <i class="fab fa-linkedin-in mr-2 mb-2 fa-fw"></i>Linkedin
+              </a>
             </li>
           </ul>
         </div>
         <div class="col-6">
           <ul class="list-unstyled">
             <li>
-              <a class="reset-anchor" href="#"
-                ><i class="fab fa-linkedin-in mr-2 mb-2 fa-fw"></i>Linkedin</a
+              <a
+                class="reset-anchor"
+                href="https://www.behance.net/mariaescribe"
+                target="blank"
               >
+                <i class="fab fa-behance mr-2 mb-2 fa-fw"></i>Behance
+              </a>
             </li>
             <li>
-              <a class="reset-anchor" href="#"
-                ><i class="fab fa-pinterest mr-2 mb-2 fa-fw"></i>Pinterest</a
+              <a
+                class="reset-anchor"
+                href="https://vm.tiktok.com/ZM83vpCnP/"
+                target="blank"
               >
-            </li>
-            <li>
-              <a class="reset-anchor" href="#"
-                ><i class="fab fa-vimeo mr-2 mb-2 fa-fw"></i>Vimeo</a
-              >
-            </li>
-            <li>
-              <a class="reset-anchor" href="#"
-                ><i class="fab fa-youtube mr-2 mb-2 fa-fw"></i>Youtube</a
-              >
+                <i class="fab fa-tiktok mr-2 mb-2 fa-fw"></i>TikTok
+              </a>
             </li>
           </ul>
         </div>

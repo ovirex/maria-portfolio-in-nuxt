@@ -7,7 +7,7 @@
             <div class="col-md-6 text-center text-md-left">
               <p class="text-small mb-3 mb-md-0">
                 <span class="text-muted"
-                  >© All rights reserved - Your company.</span
+                  >© All rights reserved - mariaescribe.</span
                 >
               </p>
             </div>
@@ -17,6 +17,7 @@
                 ><a
                   href="https://bootstraptemple.com/p/minimal-bootstrap-creative-portfolio"
                   class="reset-anchor"
+                  target="blank"
                   >Bootstrap Temple</a
                 >
               </p>

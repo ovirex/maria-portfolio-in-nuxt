@@ -16,7 +16,7 @@
           </svg>
         </button>
         <NuxtLink class="navbar-brand" to="/"
-          ><img src="~/assets/img/logo.svg" alt="" width="50"
+          ><img src="~/assets/img/mylogo.svg" alt="" width="50"
         /></NuxtLink>
       </nav>
     </header>
