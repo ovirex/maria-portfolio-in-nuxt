@@ -29,7 +29,7 @@ export default {
       {
         rel: 'icon',
         type: 'image/x-icon',
-        href: '/vue-template-portfolio-in-nuxt/favicon.ico',
+        href: '/favicon.ico',
       },
       {
         rel: 'stylesheet',
