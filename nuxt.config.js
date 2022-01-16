@@ -15,15 +15,36 @@ export default {
   },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'prueba-nuxt',
+    title: 'Mariaescribe | Portfolio',
     htmlAttrs: {
       lang: 'en',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'I want to help you reach your goals through fresh, expressive and creative visuals for your online and offline platforms.',
+      },
       { name: 'format-detection', content: 'telephone=no' },
+      {
+        property: 'og:image',
+        content: 'https://ovirex.github.io/maria-portfolio/img/LOGO.png',
+      },
+      {
+        property: 'og:image:width',
+        content: '400',
+      },
+      {
+        property: 'og:image:height',
+        content: '400',
+      },
+      {
+        name: 'robots',
+        content: 'all,follow',
+      },
     ],
     link: [
       {
