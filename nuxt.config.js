@@ -3,6 +3,11 @@ import webpack from 'webpack'
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
+
+  router: {
+    base: '/',
+  },
+
   generate: {
     async routes() {
       const { $content } = require('@nuxt/content')
