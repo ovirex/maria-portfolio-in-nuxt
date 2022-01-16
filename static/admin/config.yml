@@ -1,13 +1,13 @@
 backend:
   name: github
-  repo: ovirex/vue-template-portfolio-in-nuxt
+  repo: ovirex/maria-portfolio-in-nuxt
   branch: master
 
 media_library:
   name: cloudinary
   config:
-    cloud_name: dttbfql17
-    api_key: 211247722988129
+    cloud_name: mariaescribe
+    api_key: 683582353282898
 
 collections:
   - name: 'projects'
