@@ -19,6 +19,7 @@
           class="reset-anchor social-share-link instagram"
           href="https://www.instagram.com/mariaescribe/"
           target="blank"
+          translate="no"
         >
           <i class="fab fa-instagram mr-2"></i>Instagram
         </a>
@@ -28,6 +29,7 @@
           class="reset-anchor social-share-link linkedin"
           href="https://www.linkedin.com/in/mariaescribe/"
           target="blank"
+          translate="no"
         >
           <i class="fab fa-linkedin mr-2"></i>LinkedIn
         </a>
@@ -37,6 +39,7 @@
           class="reset-anchor social-share-link behance"
           href="https://www.behance.net/mariaescribe"
           target="blank"
+          translate="no"
         >
           <i class="fab fa-behance mr-2"></i>Behance
         </a>

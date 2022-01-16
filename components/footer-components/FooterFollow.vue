@@ -10,6 +10,7 @@
                 class="reset-anchor"
                 href="https://www.instagram.com/mariaescribe/"
                 target="blank"
+                translate="no"
               >
                 <i class="fab fa-instagram mr-2 mb-2 fa-fw"></i>Instagram
               </a>
@@ -19,6 +20,7 @@
                 class="reset-anchor"
                 href="https://www.linkedin.com/in/mariaescribe/"
                 target="blank"
+                translate="no"
               >
                 <i class="fab fa-linkedin-in mr-2 mb-2 fa-fw"></i>Linkedin
               </a>
@@ -32,6 +34,7 @@
                 class="reset-anchor"
                 href="https://www.behance.net/mariaescribe"
                 target="blank"
+                translate="no"
               >
                 <i class="fab fa-behance mr-2 mb-2 fa-fw"></i>Behance
               </a>
@@ -41,6 +44,7 @@
                 class="reset-anchor"
                 href="https://vm.tiktok.com/ZM83vpCnP/"
                 target="blank"
+                translate="no"
               >
                 <i class="fab fa-tiktok mr-2 mb-2 fa-fw"></i>TikTok
               </a>
