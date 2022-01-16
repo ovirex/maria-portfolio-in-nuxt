@@ -39,8 +39,16 @@ export default {
         crossorigin: '',
       },
       {
+        rel: 'preconnect',
+        href: 'https://fonts.googleapis.com',
+      },
+      {
+        rel: 'preconnect',
+        href: 'https://fonts.gstatic.com',
+      },
+      {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&amp;display=swap',
+        href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap',
       },
       {
         rel: 'stylesheet',

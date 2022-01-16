@@ -1,3 +1,7 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
 .sidebar-link.nuxt-link-exact-active {
   color: #ef5285;
 }
