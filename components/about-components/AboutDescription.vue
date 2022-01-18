@@ -33,23 +33,17 @@
         </p>
         <ul class="list-inline mb-0">
           <li class="list-inline-item mr-5 my-2">
+            <!-- Display resumes fetched from content -->
             <a
-              class="btn btn-primary rounded-pill mb-2"
-              href="/MARIA-GABRIELA-PEREZ-CV-ENG.pdf"
+              v-for="(resume, index) in resumes"
+              :key="index"
+              class="btn btn-primary rounded-pill mb-2 mr-2"
+              :href="resume.resume_pdf"
               target="blank"
             >
               <svg class="svg-icon mr-2 align-middle svg-icon-sm">
                 <use xlink:href="#survey-1"></use></svg
-              ><span class="align-middle">Download CV ENG</span>
-            </a>
-            <a
-              class="btn btn-primary rounded-pill mb-2"
-              href="/MARIA-GABRIELA-PEREZ-CV.pdf"
-              target="blank"
-            >
-              <svg class="svg-icon mr-2 align-middle svg-icon-sm">
-                <use xlink:href="#survey-1"></use></svg
-              ><span class="align-middle">Descargar CV ESP</span>
+              ><span class="align-middle">{{ resume.text }}</span>
             </a>
           </li>
           <li class="list-inline-item my-2">
@@ -100,5 +94,19 @@
 <script>
 export default {
   name: 'AboutDescription',
+  data() {
+    return {
+      resumes: [],
+    }
+  },
+  async fetch() {
+    try {
+      const resumesFetched = await this.$content('resumes').fetch()
+      this.resumes = resumesFetched[0].resumes
+    } catch (err) {
+      // eslint-disable-next-line no-console
+      console.error(err)
+    }
+  },
 }
 </script>
