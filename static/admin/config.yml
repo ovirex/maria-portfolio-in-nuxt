@@ -104,3 +104,25 @@ collections:
               media_library: { config: { multiple: false } },
               required: true,
             }
+  - name: 'about_info'
+    label: 'About Info'
+    folder: 'content/about_info'
+    format: 'frontmatter'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - {
+          name: 'title',
+          label: 'Title',
+          widget: 'string',
+          default: 'A description about me',
+          hint: 'Do not change this',
+        }
+      - {
+          name: 'body',
+          label: 'Description About You',
+          widget: 'markdown',
+          hint: 'Each paragraph must be inside this tags: <p class="text-muted mb-4"></p>',
+        }

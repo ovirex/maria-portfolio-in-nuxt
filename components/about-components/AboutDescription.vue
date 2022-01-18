@@ -15,22 +15,9 @@
         <h2 class="h1 font-weight-normal mb-4">
           I'm a <strong>Graphic Designer</strong> and Publicist.
         </h2>
-        <p class="text-muted mb-4">
-          I have been designing for brands professionally for over three years
-          for agencies and as a freelancer. Are you passionate about your brand?
-          I’m passionate about communicating visually, I really believe that
-          graphic design can be fun as well as functional. I mean, it is even in
-          the word! I want to help you reach your goals through fresh,
-          expressive and creative visuals for your online and offline platforms.
-        </p>
-        <p class="text-muted mb-4">
-          While advertising and graphic design are my two passions, I also love
-          drawing, karaoke, watching netflix and why not tiktok.
-        </p>
-        <p class="text-muted mb-4">
-          Anyways, let’s work together! Click the icons down below to contact
-          me, looking forward to hearing from you!
-        </p>
+
+        <nuxt-content :document="description"></nuxt-content>
+
         <ul class="list-inline mb-0">
           <li class="list-inline-item mr-5 my-2">
             <!-- Display resumes fetched from content -->
@@ -97,12 +84,24 @@ export default {
   data() {
     return {
       resumes: [],
+      description: {},
     }
   },
   async fetch() {
     try {
       const resumesFetched = await this.$content('resumes').fetch()
       this.resumes = resumesFetched[0].resumes
+    } catch (err) {
+      // eslint-disable-next-line no-console
+      console.error(err)
+    }
+
+    try {
+      const myDescription = await this.$content('about_info')
+        .only(['body'])
+        .fetch()
+
+      this.description = myDescription[0]
     } catch (err) {
       // eslint-disable-next-line no-console
       console.error(err)
