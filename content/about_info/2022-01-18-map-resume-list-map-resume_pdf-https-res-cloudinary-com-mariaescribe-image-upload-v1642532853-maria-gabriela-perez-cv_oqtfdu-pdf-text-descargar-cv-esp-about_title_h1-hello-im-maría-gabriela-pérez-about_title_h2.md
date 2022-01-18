@@ -1,4 +1,5 @@
 ---
+title: d
 about_title_h1: "# Hello! I'm **María Gabriela Pérez.**"
 about_title_h2: "## I'm a **Graphic Designer** and Publicist."
 about_description: >-
