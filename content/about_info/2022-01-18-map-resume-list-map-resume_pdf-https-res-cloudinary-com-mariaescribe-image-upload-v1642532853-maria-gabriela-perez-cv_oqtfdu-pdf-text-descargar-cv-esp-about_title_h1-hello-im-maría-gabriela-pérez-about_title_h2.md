@@ -1,5 +1,5 @@
 ---
-about_title_h1: "# Hello! I'm **María Gabriela Pérez**."
+about_title_h1: "# Hello! I'm **María Gabriela Pérez.**"
 about_title_h2: "## I'm a **Graphic Designer** and Publicist."
 about_description: >-
   I have been designing for brands professionally for over three years for
