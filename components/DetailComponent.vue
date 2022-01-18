@@ -36,10 +36,10 @@ export default {
   }),
   async fetch() {
     try {
-      const projectsFetched = await this.$content('projects').fetch()
-      const projectToShow = projectsFetched.filter(
-        (project) => project.id === this.$route.params.id
-      )
+      const projectToShow = await this.$content('projects')
+        .where({ id: this.$route.params.id })
+        .fetch()
+
       this.projectData = projectToShow[0]
     } catch (err) {
       // eslint-disable-next-line no-console
