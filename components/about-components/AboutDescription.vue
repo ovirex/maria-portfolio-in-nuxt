@@ -4,7 +4,7 @@
       <div class="col-sm-3">
         <img
           class="img-fluid img-thumbnail rounded-circle"
-          src="~/assets/img/PERFIL.jpg"
+          :src="profilePicLink"
           alt=""
         />
       </div>
@@ -85,6 +85,7 @@ export default {
     return {
       resumes: [],
       description: {},
+      profilePicLink: '',
     }
   },
   async fetch() {
@@ -102,6 +103,16 @@ export default {
         .fetch()
 
       this.description = myDescription[0]
+    } catch (err) {
+      // eslint-disable-next-line no-console
+      console.error(err)
+    }
+    try {
+      const myProfilePic = await this.$content('about_info')
+        .only(['profile_pic'])
+        .fetch()
+
+      this.profilePicLink = myProfilePic[0].profile_pic
     } catch (err) {
       // eslint-disable-next-line no-console
       console.error(err)

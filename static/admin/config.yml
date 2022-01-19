@@ -121,6 +121,12 @@ collections:
           hint: 'Do not change this',
         }
       - {
+          label: 'Profile Pic',
+          name: 'profile_pic',
+          widget: 'image',
+          allow_multiple: false,
+        }
+      - {
           name: 'body',
           label: 'Description About You',
           widget: 'markdown',
