@@ -78,7 +78,7 @@ collections:
     label: 'Resumes'
     folder: 'content/resumes'
     format: 'frontmatter'
-    create: true
+    create: false
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     identifier_field: title
     editor:
@@ -104,3 +104,53 @@ collections:
               media_library: { config: { multiple: false } },
               required: true,
             }
+  - name: 'about_info'
+    label: 'About Info'
+    folder: 'content/about_info'
+    format: 'frontmatter'
+    create: false
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - {
+          name: 'title',
+          label: 'Title',
+          widget: 'string',
+          default: 'A description about me',
+          hint: 'Do not change this',
+        }
+      - {
+          name: 'body',
+          label: 'Description About You',
+          widget: 'markdown',
+          hint: 'Each paragraph must be inside this tags: <p class="text-muted mb-4"></p>',
+        }
+  - name: 'global'
+    label: 'Global'
+    folder: 'content/global'
+    format: 'frontmatter'
+    create: false
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - {
+          name: 'title',
+          label: 'Title',
+          widget: 'string',
+          default: 'Global',
+          hint: 'Do not change this',
+        }
+      - {
+          label: 'Website logo',
+          name: 'logo',
+          widget: 'image',
+          allow_multiple: false,
+        }
+      - {
+          name: 'body',
+          label: 'Footer Description',
+          widget: 'markdown',
+          hint: 'The footer description',
+        }
