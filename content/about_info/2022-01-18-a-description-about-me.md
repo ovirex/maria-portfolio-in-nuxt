@@ -1,5 +1,6 @@
 ---
-title: A description about me
+title: The About Details
+profile_pic: https://res.cloudinary.com/mariaescribe/image/upload/v1642624984/PERFIL_or2la5.jpg
 ---
 <p class="text-muted mb-4">I have been designing for brands professionally for over three years for agencies and as a freelancer. Are you passionate about your brand? I’m passionate about communicating visually, I really believe that graphic design can be fun as well as functional. I mean, it is even in the word! I want to help you reach your goals through fresh, expressive and creative visuals for your online and offline platforms.</p>
 
