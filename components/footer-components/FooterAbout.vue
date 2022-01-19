@@ -2,7 +2,7 @@
   <div class="col-lg-4 mb-4 mb-lg-0">
     <h2 class="h4 text-white mb-4">About me</h2>
     <p class="text-small">
-      <NuxtContent :document="aboutmeText" tag="p" />
+      <NuxtContent :document="aboutmeText" />
     </p>
     <ul class="list-unstyled text-small mb-0 text-white">
       <li class="mb-1">
