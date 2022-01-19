@@ -62,7 +62,7 @@ export default {
   name: 'PageSidebar',
   data() {
     return {
-      websiteLogo: '',
+      websiteLogoLink: '',
     }
   },
   async fetch() {
