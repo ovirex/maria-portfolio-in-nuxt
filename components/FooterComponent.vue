@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-lg-10 mx-auto">
           <div class="row">
-            <footer-about></footer-about>
+            <footer-about :aboutme-text="footerAboutmeText"></footer-about>
             <footer-follow></footer-follow>
           </div>
         </div>
@@ -17,5 +17,11 @@
 <script>
 export default {
   name: 'FooterComponent',
+  props: {
+    // eslint-disable-next-line vue/require-default-prop
+    footerAboutmeText: {
+      type: Object,
+    },
+  },
 }
 </script>

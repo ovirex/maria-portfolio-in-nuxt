@@ -2,8 +2,7 @@
   <div class="col-lg-4 mb-4 mb-lg-0">
     <h2 class="h4 text-white mb-4">About me</h2>
     <p class="text-small">
-      I want to help you reach your goals through fresh, expressive and creative
-      visuals for your online and offline platforms.
+      <NuxtContent :document="aboutmeText" tag="p" />
     </p>
     <ul class="list-unstyled text-small mb-0 text-white">
       <li class="mb-1">
@@ -18,5 +17,11 @@
 <script>
 export default {
   name: 'FooterAbout',
+  props: {
+    // eslint-disable-next-line vue/require-default-prop
+    aboutmeText: {
+      type: Object,
+    },
+  },
 }
 </script>

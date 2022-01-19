@@ -16,7 +16,7 @@
           </svg>
         </button>
         <NuxtLink class="navbar-brand" to="/"
-          ><img src="~/assets/img/mylogo.svg" alt="" width="50"
+          ><img :src="logoLink" alt="" width="50"
         /></NuxtLink>
       </nav>
     </header>
@@ -26,6 +26,15 @@
 <script>
 export default {
   name: 'PageNavbar',
+  props: {
+    // eslint-disable-next-line vue/require-default-prop
+    logoLink: {
+      type: String,
+      default() {
+        return '~/assets/img/mylogo.svg'
+      },
+    },
+  },
   watch: {
     $route(to, from) {
       // react to route changes...

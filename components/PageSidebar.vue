@@ -3,7 +3,7 @@
     <div class="sidebar-inner d-flex flex-column">
       <div class="px-4 py-5">
         <NuxtLink to="/" href=""
-          ><img src="~/assets/img/mylogo.svg" alt="" width="90"
+          ><img :src="websiteLogoLink" alt="" width="90"
         /></NuxtLink>
       </div>
       <sidebar-menu></sidebar-menu>
@@ -60,6 +60,21 @@
 <script>
 export default {
   name: 'PageSidebar',
+  data() {
+    return {
+      websiteLogo: '',
+    }
+  },
+  async fetch() {
+    try {
+      const logo = await this.$content('global').only(['logo']).fetch()
+
+      this.websiteLogoLink = logo[0].logo
+    } catch (err) {
+      // eslint-disable-next-line no-console
+      console.error(err)
+    }
+  },
 }
 </script>
 
