@@ -9,6 +9,8 @@ media_library:
     cloud_name: mariaescribe
     api_key: 683582353282898
 
+publish_mode: editorial_workflow
+
 collections:
   - name: 'projects'
     label: 'Projects'
