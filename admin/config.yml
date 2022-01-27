@@ -12,6 +12,7 @@ media_library:
 publish_mode: editorial_workflow
 
 collections:
+  # Projects Collection
   - name: 'projects'
     label: 'Projects'
     folder: 'content/projects'
@@ -21,21 +22,7 @@ collections:
     editor:
       preview: false
     fields:
-      - {
-          label: ID,
-          name: id,
-
-          # Default widget name
-          widget: ncw-id,
-
-          # <Optional> If `true`, add timestamp, i.e post-1588747959991-dnfuHvOhP
-          # This can be used to sort collection by creation time
-          timestamp: false,
-
-          # <Optional> Hide the widget from UI
-          # Beware: We literally add `display: none` to the DOM node wrapping the input. It will break if netlifyCMS's editor pane structure changes.
-          hidden: false,
-        }
+      - { name: id, label: ID, widget: uuid, hint: 'Do not edit this field' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - {
           label: 'Short Descripcion',
@@ -43,15 +30,15 @@ collections:
           widget: 'string',
         }
       - { label: 'Long Description', name: 'long_description', widget: 'text' }
-      - {
-          label: 'Tags',
-          name: 'tags',
-          widget: 'select',
-          multiple: true,
-          min: 1,
-          max: 3,
-          options: ['Social Media Design', 'Web Design', 'Art Direction'],
-        }
+
+      - label: 'Project Tags'
+        name: 'project_tags'
+        widget: 'relation'
+        collection: 'menu_options'
+        search_fields: ['menu_options_list.*.title']
+        value_field: 'menu_options_list.*.title'
+        multiple: true
+
       - {
           label: 'Thumbnail',
           name: 'thumbnail',
@@ -76,6 +63,8 @@ collections:
               media_library: { config: { multiple: true } },
               required: true,
             }
+
+  # Resumes Collection
   - name: 'resume'
     label: 'Resumes'
     folder: 'content/resumes'
@@ -106,6 +95,8 @@ collections:
               media_library: { config: { multiple: false } },
               required: true,
             }
+
+  # About Info Collection
   - name: 'about_info'
     label: 'About Info'
     folder: 'content/about_info'
@@ -134,6 +125,8 @@ collections:
           widget: 'markdown',
           hint: 'Each paragraph must be inside this tags: <p class="text-muted mb-4"></p>',
         }
+
+  # Global Collection
   - name: 'global'
     label: 'Global'
     folder: 'content/global'
@@ -162,3 +155,26 @@ collections:
           widget: 'markdown',
           hint: 'The footer description',
         }
+
+  # Menu Options Collecion
+  - name: 'menu_options'
+    label: 'Menu Options'
+    folder: 'content/menu_options'
+    format: 'frontmatter'
+    create: false
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    description: 'Here you can add the options that you will see on the sidebar (except "home" and "about"). Also, those options will be the tags that you assign to the projects.'
+    fields:
+      - {
+          name: 'title',
+          label: 'Title',
+          default: 'Your Options List',
+          widget: hidden,
+        }
+      - name: 'menu_options_list'
+        label: 'Menu Options List'
+        widget: 'list'
+        fields:
+          - { name: 'title', label: 'Menu Option Name', widget: 'string' }
