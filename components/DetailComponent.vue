@@ -13,7 +13,7 @@
       ></lightbox-component>
       <detail-description
         :desc="projectData.long_description"
-        :tags="projectData.tags"
+        :tags="projectData.project_tags"
       ></detail-description>
     </div>
   </div>
@@ -29,7 +29,7 @@ export default {
       title: '',
       short_description: '',
       long_description: '',
-      tags: [],
+      project_tags: [],
       thumbnail: '',
       project_images: [],
     },
