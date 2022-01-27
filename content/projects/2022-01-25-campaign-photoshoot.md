@@ -8,8 +8,7 @@ long_description: "Fun is what you make it and you can drink coffee however you
   and one of the brand's signature colors: red, to show power and create
   contrast with fun and softer but full of personality colors like yellow and
   hot pink."
-tags:
-  - Art Direction
+tags: null
 project_tags:
   - Art Direction
 thumbnail: https://res.cloudinary.com/mariaescribe/image/upload/v1643079578/CT.1.2_lyqtb5.jpg
