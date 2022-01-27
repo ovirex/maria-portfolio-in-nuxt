@@ -13,10 +13,25 @@ export default {
       const { $content } = require('@nuxt/content')
       const files = await $content('/projects', { deep: true }).fetch()
 
-      return files.map((file) =>
+      const options = await $content('menu_options', { deep: true }).fetch()
+
+      const routes = files.map((file) =>
         file.path === '/index' ? '/' : `/works/${file.id}`
       )
+
+      /**
+       * Add the Strings stored in the menu_options_list
+       * as routes.
+       */
+      routes.push(
+        options[0].menu_options_list.map((option) => {
+          return option.title.toLowerCase().split(' ').join('-')
+        })
+      )
+
+      return routes
     },
+    exclude: ['/web-design', '/social-media-design', '/art-direction'],
   },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
