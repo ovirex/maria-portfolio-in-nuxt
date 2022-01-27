@@ -2,10 +2,9 @@
 id: _eyQilPHf
 title: ICON Signed by Ferrara
 short_description: An elegant and clean identity for an exclusive line.
-long_description: "ICON is the new line from Venezuela’s number one luxury
+long_description: 'ICON is the new line from Venezuela’s number one luxury
   brand: Ferrara. It’s goal is to make you feel iconic while bringing elegance,
-  exclusivity and originality to your home without leaving comfort behind."
-tags: null
+  exclusivity and originality to your home without leaving comfort behind.'
 project_tags:
   - Art Direction
 thumbnail: https://res.cloudinary.com/mariaescribe/image/upload/v1642377846/ICON/image1_xz7o8x.jpg

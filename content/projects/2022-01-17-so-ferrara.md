@@ -7,7 +7,6 @@ long_description: From brand conceptualization to visual communication system
   Ferrara”, mixes minimalism’s simpleness and cleanness with an expressive and
   brutalist way of communicating, daring the viewer to express themselves
   creatively through their home spaces.
-tags: null
 project_tags:
   - Social Media Design
   - Art Direction
