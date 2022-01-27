@@ -7,9 +7,7 @@ long_description: Tu Amiga Psicóloga is a friendly face that’s looking forwar
   troubles your head. Tu Amiga Psicóloga achieves this through simple graphic
   principles combined with current trends making it fresh and easy to
   understand.
-tags:
-  - Social Media Design
-  - Web Design
+tags: null
 project_tags:
   - Social Media Design
   - Web Design
