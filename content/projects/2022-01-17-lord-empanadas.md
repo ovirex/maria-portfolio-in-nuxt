@@ -10,6 +10,8 @@ long_description: Lord Empanadas is always packed with orders at the restaurant
   was a must!
 tags:
   - Web Design
+project_tags:
+  - Web Design
 thumbnail: https://res.cloudinary.com/mariaescribe/image/upload/v1642378013/LORD-EMPANADAS/WEB/image1_z4xerd.jpg
 project_images:
   - title: Web Design

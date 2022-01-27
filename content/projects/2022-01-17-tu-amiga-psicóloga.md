@@ -10,6 +10,9 @@ long_description: Tu Amiga Psicóloga is a friendly face that’s looking forwar
 tags:
   - Social Media Design
   - Web Design
+project_tags:
+  - Social Media Design
+  - Web Design
 thumbnail: https://res.cloudinary.com/mariaescribe/image/upload/v1642377840/TAP/RRSS/image1_kjnas6.jpg
 project_images:
   - title: Social Media Design

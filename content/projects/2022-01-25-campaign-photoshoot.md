@@ -10,6 +10,8 @@ long_description: "Fun is what you make it and you can drink coffee however you
   hot pink."
 tags:
   - Art Direction
+project_tags:
+  - Art Direction
 thumbnail: https://res.cloudinary.com/mariaescribe/image/upload/v1643079578/CT.1.2_lyqtb5.jpg
 project_images:
   - images:

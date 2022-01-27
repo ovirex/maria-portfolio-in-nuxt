@@ -7,6 +7,8 @@ long_description: "ICON is the new line from Venezuela’s number one luxury
   exclusivity and originality to your home without leaving comfort behind."
 tags:
   - Art Direction
+project_tags:
+  - Art Direction
 thumbnail: https://res.cloudinary.com/mariaescribe/image/upload/v1642377846/ICON/image1_xz7o8x.jpg
 project_images:
   - title: Art Direction
