@@ -24,14 +24,13 @@ export default {
        * as routes.
        */
       routes.push(
-        options[0].menu_options_list.map((option) => {
-          return option.title.toLowerCase().split(' ').join('-')
+        ...options[0].menu_options_list.map((option) => {
+          return `/${option.title.toLowerCase().split(' ').join('-')}`
         })
       )
 
       return routes
     },
-    exclude: ['/web-design', '/social-media-design', '/art-direction'],
   },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
