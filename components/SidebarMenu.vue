@@ -68,8 +68,6 @@ export default {
         }
         return menuOptionsObject
       })
-      // eslint-disable-next-line no-console
-      console.log(this.menuOptions)
     } catch (err) {
       // eslint-disable-next-line no-console
       console.error(err)
