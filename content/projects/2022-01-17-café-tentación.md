@@ -8,6 +8,8 @@ long_description: Enough with the coffee beans heart photo and the ugly coffee
   for that all-nighter you gotta pull off. Coffee can be fun.
 tags:
   - Art Direction
+project_tags:
+  - Art Direction
 thumbnail: https://res.cloudinary.com/mariaescribe/image/upload/v1642377844/CAFE-TENTACION/WEB/image1_aa7ouy.jpg
 project_images:
   - title: Social Media Design
