@@ -15,8 +15,8 @@
           >Home</NuxtLink
         >
       </li>
-      <li class="mb-2 pb-1">
-        <!-- Link--><NuxtLink
+      <li v-for="(option, index) in menuOptions" :key="index" class="mb-2 pb-1">
+        <NuxtLink
           class="
             sidebar-link
             h6
@@ -25,36 +25,8 @@
             font-weight-bold
             text-small
           "
-          to="/social-media-design"
-          >Social Media Design</NuxtLink
-        >
-      </li>
-      <li class="mb-2 pb-1">
-        <!-- Link--><NuxtLink
-          class="
-            sidebar-link
-            h6
-            text-uppercase
-            letter-spacing-2
-            font-weight-bold
-            text-small
-          "
-          to="/web-design"
-          >Web Design</NuxtLink
-        >
-      </li>
-      <li class="mb-2 pb-1">
-        <!-- Link--><NuxtLink
-          class="
-            sidebar-link
-            h6
-            text-uppercase
-            letter-spacing-2
-            font-weight-bold
-            text-small
-          "
-          to="/art-direction"
-          >Art Direction</NuxtLink
+          :to="`/${option.link}`"
+          >{{ option.title }}</NuxtLink
         >
       </li>
       <li class="mb-2 pb-1">
@@ -78,5 +50,35 @@
 <script>
 export default {
   name: 'SidebarMenu',
+  data() {
+    return {
+      menuOptions: [],
+    }
+  },
+  async fetch() {
+    try {
+      const siteMenuOptions = await this.$content('menu_options')
+        .only(['menu_options_list'])
+        .fetch()
+
+      this.menuOptions = siteMenuOptions[0].menu_options_list.map((option) => {
+        const menuOptionsObject = {
+          title: option.title,
+          link: this.makeLinkFromTitle(option.title),
+        }
+        return menuOptionsObject
+      })
+      // eslint-disable-next-line no-console
+      console.log(this.menuOptions)
+    } catch (err) {
+      // eslint-disable-next-line no-console
+      console.error(err)
+    }
+  },
+  methods: {
+    makeLinkFromTitle(title) {
+      return title.split(' ').join('-').toLowerCase()
+    },
+  },
 }
 </script>
