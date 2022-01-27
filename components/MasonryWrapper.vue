@@ -39,30 +39,32 @@ export default {
     filterProjectsAccordingToPath() {
       this.path = this.$route.path.replace('/', '')
 
-      const tag = this.capitalizePathName(this.path)
+      const tag = this.convertPathToLowerCase(this.path)
 
       if (tag === null) {
         this.projectsToShow = this.projects
       } else {
         this.projectsToShow = this.projects.filter((project) => {
-          return project.project_tags.includes(tag)
+          const projectsTag = project.project_tags.map((ele) => {
+            /** Tranform the projects tags to lowerCase so it can
+             *  match with the tag variable format
+             */
+            return ele.toLowerCase()
+          })
+          return projectsTag.includes(tag)
         })
       }
     },
-    capitalizePathName(path) {
-      /**
-       * This function make the current path to have a format similar to the
-       * Strings in the tags Array of the project
-       */
+    /**
+     * This function return the current path with a format similar to the
+     * Strings in the projects_tags Array of the project.
+     * e.g: from web-design to web design
+     */
+    convertPathToLowerCase(path) {
       if (path === '') {
         return null
       }
-      return path
-        .split('-')
-        .map((word) => {
-          return `${word[0].toUpperCase() + word.slice(1)}`
-        })
-        .join(' ')
+      return path.split('-').join(' ').toLowerCase()
     },
   },
 }
