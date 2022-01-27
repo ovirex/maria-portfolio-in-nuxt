@@ -45,7 +45,7 @@ export default {
         this.projectsToShow = this.projects
       } else {
         this.projectsToShow = this.projects.filter((project) => {
-          return project.tags.includes(tag)
+          return project.project_tags.includes(tag)
         })
       }
     },
