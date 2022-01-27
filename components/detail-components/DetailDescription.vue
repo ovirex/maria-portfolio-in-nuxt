@@ -76,12 +76,9 @@ export default {
           /**
            * The link variable has to match with the paths available in the routes
            */
-          const link = this.tagLink(tag)
-          const isLinkValid = this.verifyRoutes(`/${link}`)
+          const link = this.convertTagToLink(tag)
 
-          return `<NuxtLink class="reset-anchor" to="/${
-            isLinkValid ? link : ''
-          }">${tag}</NuxtLink>`
+          return `<NuxtLink class="reset-anchor" to="/${link}">${tag}</NuxtLink>`
         })
         .join(', ')
 
@@ -94,13 +91,8 @@ export default {
     },
   },
   methods: {
-    tagLink(tagString) {
+    convertTagToLink(tagString) {
       return tagString.toLowerCase().split(' ').join('-')
-    },
-    verifyRoutes(link) {
-      return this.$router.options.routes.some((route) => {
-        return route.path === link
-      })
     },
   },
 }
