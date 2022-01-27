@@ -21,21 +21,7 @@ collections:
     editor:
       preview: false
     fields:
-      - {
-          label: ID,
-          name: id,
-
-          # Default widget name
-          widget: ncw-id,
-
-          # <Optional> If `true`, add timestamp, i.e post-1588747959991-dnfuHvOhP
-          # This can be used to sort collection by creation time
-          timestamp: false,
-
-          # <Optional> Hide the widget from UI
-          # Beware: We literally add `display: none` to the DOM node wrapping the input. It will break if netlifyCMS's editor pane structure changes.
-          hidden: false,
-        }
+      - { name: id, label: ID, widget: uuid, hint: 'Do not edit this field' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - {
           label: 'Short Descripcion',
