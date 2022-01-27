@@ -7,7 +7,6 @@
 <script>
 export default {
   name: 'IndexPage',
-  layout: 'CustomLayout',
   head() {
     return {
       script: [
