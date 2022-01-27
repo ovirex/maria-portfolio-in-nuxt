@@ -11,6 +11,10 @@ tags:
   - Social Media Design
   - Art Direction
   - Web Design
+project_tags:
+  - Social Media Design
+  - Art Direction
+  - Web Design
 thumbnail: https://res.cloudinary.com/mariaescribe/image/upload/v1642377839/SO-FERRARA/RRSS/image1_qldecu.jpg
 project_images:
   - title: Social Media Design
